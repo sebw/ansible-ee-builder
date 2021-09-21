@@ -56,7 +56,7 @@ If you get an error, just make sure the Quay repository is public.
 
 From this point on, you can create a new execution environment in AAP 2 under Administration > Execution Environment > Add.
 
-You can then configure your project to use your newly published execution environment.
+You can then configure your project or job template to use your newly published execution environment.
 
 # More info
 
