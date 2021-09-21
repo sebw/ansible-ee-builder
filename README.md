@@ -4,13 +4,13 @@ Tested on Fedora 34.
 
 From a bash terminal, follow these instructions.
 
-Install virtualenv:
+Install virtualenv and podman if not yet installed:
 
 ```
-sudo dnf install python3-virtualenv
+sudo dnf install python3-virtualenv podman
 ```
 
-Create a Python virtual environment, activate it and install ansible-builder:
+Create a Python virtual environment, activate it and install ansible-builder within it:
 
 ```
 virtualenv builder
@@ -24,10 +24,14 @@ Clone this repository:
 git clone https://github.com/RedHatBelux/ansible-ee-builder.git
 ```
 
-Build the image:
+Have a look at the content of the repository. For the sake of the example we are including an Ansible collection (`requirements.yml`), some Python dependencies (`requirements.txt`) and add a RPM on top of it (`bindep.txt`).
+
+Feel free to modify those to your liking.
+
+Now build your image:
 
 ```
-cd ansible-ee-builder
+cd ansible-ee-builder/
 ansible-builder build --tag my_first_ee_image --container-runtime podman
 ```
 
