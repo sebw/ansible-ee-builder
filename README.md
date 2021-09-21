@@ -35,6 +35,8 @@ cd ansible-ee-builder/
 ansible-builder build --tag my_first_ee_image --container-runtime podman
 ```
 
+This can take a couple of minutes.
+
 Confirm that the image is available locally:
 
 ```
@@ -49,14 +51,16 @@ Tag your image:
 podman tag localhost/my_first_ee_image quay.io/YOUR-QUAY-USER/my_ee_image:0.0.1
 ```
 
-Log into quay and push your image:
+In a web browser, log into your Quay account, create a new repository called `my_ee_image` and make sure your account as admin permissions.
+
+From the CLI, log into quay.io and push your image:
 
 ```
 podman login quay.io
 podman push quay.io/YOUR-QUAY-USER/my_ee_image:0.0.1
 ```
 
-If you get an error, just make sure the Quay repository is public.
+If you get an error, rerun the push command.
 
 From this point on, you can create a new execution environment in AAP 2 under Administration > Execution Environment > Add.
 
