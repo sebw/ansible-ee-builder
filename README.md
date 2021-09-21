@@ -55,7 +55,7 @@ Tag your image:
 podman tag localhost/my_first_ee_image quay.io/YOUR-QUAY-USER/my_ee_image:0.0.1
 ```
 
-In a web browser, log into your Quay account, create a new repository called `my_ee_image` and make sure your account as admin permissions.
+In a web browser, log into your Quay account, create a new repository called `my_ee_image` and make sure your account has admin permissions.
 
 From the CLI, log into quay.io and push your image:
 
