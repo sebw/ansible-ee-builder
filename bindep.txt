@@ -1,2 +1,2 @@
+# Examples: https://docs.opendev.org/opendev/bindep/latest/readme.html#examples
 subversion [platform:rpm]
-subversion [platform:dpkg]
