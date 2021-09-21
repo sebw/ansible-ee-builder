@@ -1,4 +1,4 @@
-# Ansible Execution Environment Builder
+# Ansible Execution Environment (EE) Builder
 
 Tested on Fedora 34.
 
@@ -37,6 +37,10 @@ ansible-builder build --tag my_first_ee_image --container-runtime podman
 
 This can take a couple of minutes.
 
+Wait for the "Complete! The build context can be found at..." message.
+
+If you are curious, you can check the `context/Containerfile` that has been used to build your new EE.
+
 Confirm that the image is available locally:
 
 ```
@@ -59,8 +63,6 @@ From the CLI, log into quay.io and push your image:
 podman login quay.io
 podman push quay.io/YOUR-QUAY-USER/my_ee_image:0.0.1
 ```
-
-If you get an error, rerun the push command.
 
 From this point on, you can create a new execution environment in AAP 2 under Administration > Execution Environment > Add.
 
