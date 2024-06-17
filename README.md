@@ -23,7 +23,7 @@ pip install ansible-builder
 Clone this repository:
 
 ```
-git clone https://github.com/RedHatBelux/ansible-ee-builder.git
+git clone https://github.com/sebw/ansible-ee-builder.git
 ```
 
 Have a look at the content of the repository. For the sake of the example we are including an Ansible collection (`requirements.yml`), some Python dependencies (`requirements.txt`) and add a RPM on top of it (`bindep.txt`).
