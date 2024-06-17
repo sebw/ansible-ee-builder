@@ -1,6 +1,6 @@
 # Ansible Execution Environment (EE) Builder
 
-Tested on Fedora 34 and upstream ansible-builder. 
+Tested on Fedora 39 and upstream ansible-builder. 
 
 !!! This would not result in a Red Hat supported execution environment !!!
 
